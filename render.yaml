@@ -4,7 +4,7 @@ services:
     name: alist
     env: docker
     repo: https://github.com/NalCol/ExpList.git # optional
-    region: oregon # optional (defaults to oregon)
+    region: singapore # optional (defaults to oregon)
     plan: free # optional (defaults to starter)
     healthCheckPath: /
     envVars:
@@ -29,8 +29,8 @@ services:
         # value: db_name
         sync: false
       - key: DB_TABLE_PREFIX
-        # value: alist_
+        value: alist_
         sync: false
       - key: CDN
-        # value: https://npm.elemecdn.com/alist-web@$version/dist
+        value: https://npm.elemecdn.com/alist-web@$version/dist
         sync: false
